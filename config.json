@@ -1,0 +1,183 @@
+{
+  "client": {
+    "token": "",
+    "clientId": "1174817963115814912",
+    "guildId": "1422354295033954449"
+  },
+  "protection": {
+    "antiRaid": {
+      "enabled": true,
+      "maxJoins": 5,
+      "timeframe": 10000,
+      "action": "kick"
+    },
+    "antiNuke": {
+      "enabled": true,
+      "maxActions": 3,
+      "timeframe": 5000,
+      "action": "ban"
+    },
+    "antiSpam": {
+      "enabled": true,
+      "maxMessages": 5,
+      "timeframe": 5000,
+      "action": "delete"
+    },
+    "antiLink": {
+      "enabled": true,
+      "allowedDomains": [
+        "discord.gg",
+        "github.com",
+        "youtube.com",
+        "twitch.tv",
+        "twitter.com",
+        "instagram.com",
+        "facebook.com"
+      ],
+      "action": "delete"
+    },
+    "antiMention": {
+      "enabled": true,
+      "maxMentions": 5,
+      "action": "delete"
+    },
+    "antiBot": {
+      "enabled": true,
+      "action": "kick"
+    },
+    "antiRole": {
+      "enabled": true,
+      "maxRoleActions": 3,
+      "timeframe": 10000,
+      "action": "ban"
+    },
+    "antiChannel": {
+      "enabled": true,
+      "maxChannelActions": 3,
+      "timeframe": 10000,
+      "action": "ban"
+    },
+    "antiWebhook": {
+      "enabled": true,
+      "action": "delete"
+    },
+    "antiEmoji": {
+      "enabled": true,
+      "maxEmojiActions": 3,
+      "timeframe": 10000
+    },
+    "antiSticker": {
+      "enabled": true,
+      "maxStickerActions": 3,
+      "timeframe": 10000
+    },
+    "antiServer": {
+      "enabled": true,
+      "action": "log"
+    },
+    "antiBan": {
+      "enabled": true,
+      "maxBans": 3,
+      "timeframe": 10000,
+      "action": "ban"
+    },
+    "antiKick": {
+      "enabled": true,
+      "maxKicks": 3,
+      "timeframe": 10000,
+      "action": "ban"
+    },
+    "antiAdmin": {
+      "enabled": true,
+      "action": "prevent"
+    }
+  },
+  "backup": {
+    "autoBackup": true,
+    "backupInterval": 30,
+    "maxBackups": 10,
+    "saveRoles": true,
+    "saveChannels": true,
+    "saveEmojis": true,
+    "saveStickers": true,
+    "saveSettings": true,
+    "saveMembers": false,
+    "saveBans": false
+  },
+  "warnings": {
+    "maxWarnings": 3,
+    "actions": [
+      {
+        "warnings": 1,
+        "action": "timeout",
+        "duration": 300000
+      },
+      {
+        "warnings": 2,
+        "action": "timeout",
+        "duration": 900000
+      },
+      {
+        "warnings": 3,
+        "action": "kick",
+        "duration": 0
+      },
+      {
+        "warnings": 5,
+        "action": "ban",
+        "duration": 0
+      }
+    ]
+  },
+  "webDashboard": {
+    "enabled": false,
+    "port": 3000,
+    "sessionSecret": "CHANGE_THIS_TO_RANDOM_SECRET_KEY",
+    "domain": "http://localhost:3000"
+  },
+  "colors": {
+    "primary": "#5865F2",
+    "success": "#57F287",
+    "warning": "#FEE75C",
+    "error": "#ED4245",
+    "info": "#00B0F4"
+  },
+  "settings": {
+    "prefix": "/",
+    "defaultLanguage": "ar",
+    "logChannel": null,
+    "adminRole": null,
+    "modRole": null,
+    "autoSave": true,
+    "saveInterval": 300000,
+    "whitelist": [],
+    "allowedBotRoles": [],
+    "ignoredChannels": [],
+    "maxBackupSize": 50
+  },
+  "embeds": {
+    "protectionTitle": "🛡️ نظام الحماية",
+    "backupTitle": "💾 نظام النسخ الاحتياطي",
+    "warningTitle": "⚠️ نظام التحذيرات",
+    "restoreTitle": "🔧 نظام الاستعادة",
+    "footerText": "Security Bot • {timestamp}",
+    "showTimestamps": true
+  },
+  "permissions": {
+    "admin": [
+      "ADMINISTRATOR"
+    ],
+    "mod": [
+      "KICK_MEMBERS",
+      "BAN_MEMBERS",
+      "MANAGE_MESSAGES",
+      "MANAGE_ROLES"
+    ],
+    "backup": [
+      "MANAGE_GUILD"
+    ],
+    "protection": [
+      "MANAGE_GUILD"
+    ]
+  }
+}

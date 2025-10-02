@@ -1,0 +1,33 @@
+{
+  "name": "discord-security-bot",
+  "version": "2.0.0",
+  "description": "Advanced Discord security and backup bot with comprehensive protection systems",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "setup": "node setup.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "discord",
+    "security",
+    "protection",
+    "backup",
+    "moderation",
+    "anti-raid",
+    "anti-nuke"
+  ],
+  "author": "Joe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeweek1/Protection-bot-.git"
+  }
+}
